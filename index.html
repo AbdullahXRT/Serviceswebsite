@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Website</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+    <section id="home">
+        <h2>Welcome to Our Website</h2>
+        <p>This is the home section of your website. Feel free to add your content here.</p>
+        <button onclick="scrollToSection('about')">Learn More</button>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to [Your Company/Project Name]! We are a passionate team dedicated to [describe your mission or purpose]. Our journey began with the goal of [mention any specific goals or values]. Through hard work and dedication, we aim to [briefly describe your vision].</p>
+        <p>At [Your Company/Project Name], we believe in [core beliefs or principles]. Our team is committed to delivering [specific benefits or solutions] to our users, ensuring a positive and meaningful experience.</p>
+        <button onclick="scrollToSection('faq')">Explore FAQ</button>
+    </section>
+    <section id="faq">
+        <h2>FAQ</h2>
+        <h3>1. What services/products do you offer?</h3>
+        <p>At [Your Company/Project Name], we offer a range of [services/products] designed to [address specific needs or challenges]. Our focus is on [key features or aspects] to provide the best value to our users.</p>
+
+        <h3>2. How can I contact your support team?</h3>
+        <p>You can reach our support team by [providing contact details or a link to the support page]. We are here to assist you with any questions, concerns, or feedback you may have.</p>
+
+        <h3>3. What makes [Your Company/Project Name] unique?</h3>
+        <p>What sets us apart is our commitment to [highlight unique aspects, values, or features]. We strive to [differentiate yourself from competitors] and provide an exceptional experience for our users.</p>
+        <button onclick="scrollToSection('home')">Back to Top</button>
+    </section>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
